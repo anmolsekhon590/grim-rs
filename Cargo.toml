@@ -6,9 +6,6 @@ edition = "2024"
 [dependencies]
 clap = { version = "4.5.31", features = ["derive"] }
 wayland-client = "0.31.8"
-wayland-protocols = "0.32.6"
-wayland-scanner = "0.31.6"
-
-[build-dependencies]
-wayland-scanner = "0.31.6"
+wayland-protocols = { version = "0.32.6", features = ["client", "unstable"] }
+wayland-protocols-wlr = { version = "0.3.6", features = ["client"] }
 
